@@ -1,0 +1,25 @@
+{
+  "name": "ai-pdlc-marketplace",
+  "owner": {
+    "name": "AI-PDLC Team",
+    "email": "fmlin0429712024@gmail.com"
+  },
+  "metadata": {
+    "description": "AI-PDLC agent plugins for Claude Code and Cowork",
+    "version": "2026.04.20"
+  },
+  "plugins": [
+    {
+      "name": "incident-triage",
+      "description": "Triage production incidents with severity classification, historical context, and post-triage actions. Includes on-call agent persona, SQLite MCP server, and bundled incident database.",
+      "version": "0.2.0",
+      "source": {
+        "source": "github",
+        "repo": "fmlin0429712024/incident-triage-plugin"
+      },
+      "author": { "name": "Forest Lin" },
+      "category": "operations",
+      "keywords": ["incident", "triage", "oncall", "operations"]
+    }
+  ]
+}
