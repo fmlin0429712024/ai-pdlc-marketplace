@@ -1,0 +1,3 @@
+[submodule "plugins/incident-triage"]
+	path = plugins/incident-triage
+	url = https://github.com/fmlin0429712024/incident-triage-plugin.git
