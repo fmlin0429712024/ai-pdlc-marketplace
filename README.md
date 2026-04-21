@@ -6,7 +6,8 @@ Plugin catalog for Claude Code and Cowork. This repo is the **discovery layer** 
 
 | Plugin | Category | Version | Description |
 |--------|----------|---------|-------------|
-| [incident-triage](https://github.com/fmlin0429712024/incident-triage-plugin) | operations | 0.2.0 | Triage production incidents with severity classification, historical context, and post-triage actions |
+| [incident-triage](https://github.com/fmlin0429712024/incident-triage-plugin) | operations | 0.2.0 | Triage production incidents — external (git submodule) |
+| [incident-triage-internal](plugins/incident-triage-internal/) | operations | 0.2.0 | Triage production incidents — internal (marketplace-bundled) |
 
 ## How It Works
 
@@ -37,9 +38,10 @@ Add an entry to `.claude-plugin/marketplace.json` under the `plugins` array:
 
 ```
 marketplace.json (this repo)
-  └── points to plugin repos
-        ├── fmlin0429712024/incident-triage-plugin
-        └── ... future plugins
+  ├── external plugins (git submodules)
+  │     └── external_plugins/incident-triage → github.com/fmlin0429712024/incident-triage-plugin
+  └── internal plugins (committed directly)
+        └── plugins/incident-triage-internal/
 ```
 
 Follows the same pattern as Anthropic's [claude-plugins-official](https://github.com/anthropics/claude-plugins-official) repo.

@@ -20,6 +20,15 @@
       "author": { "name": "Forest Lin" },
       "category": "operations",
       "keywords": ["incident", "triage", "oncall", "operations"]
+    },
+    {
+      "name": "incident-triage-internal",
+      "description": "Internal marketplace copy of incident-triage plugin. Triage production incidents with severity classification, historical context, and post-triage actions.",
+      "version": "0.2.0",
+      "source": "./plugins/incident-triage-internal",
+      "author": { "name": "Forest Lin" },
+      "category": "operations",
+      "keywords": ["incident", "triage", "oncall", "operations", "internal"]
     }
   ]
 }
